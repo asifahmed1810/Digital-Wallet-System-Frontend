@@ -1,6 +1,8 @@
 
 import './App.css'
-import { Button } from './components/ui/button'
+import Navbar from './components/LayOut/Navbar'
+
+
 
 function App() {
 
@@ -8,10 +10,8 @@ function App() {
   return (
     <>
    
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-      <Button>Click</Button>
+   <Navbar></Navbar>
+    
     </>
   )
 }
