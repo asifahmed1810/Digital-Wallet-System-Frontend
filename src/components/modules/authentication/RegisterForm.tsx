@@ -19,6 +19,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { Link } from "react-router";
 
 // ✅ Zod Schema for Validation
 const registerSchema = z.object({
@@ -46,7 +47,7 @@ export default function RegisterForm() {
   };
 
   return (
-    <div className="flex justify-center items-center   dark:bg-black  transition-colors duration-300">
+    <div className="flex flex-col gap-6 justify-center items-center   dark:bg-black  transition-colors duration-300">
       <div className="w-full max-w-md bg-white dark:bg-black p-8 rounded-2xl shadow-lg dark:shadow-gray-950/30 transition-colors duration-300">
         <h2 className="text-2xl font-semibold text-center mb-6 text-gray-900 dark:text-gray-100">
           Create an Account
@@ -153,6 +154,13 @@ export default function RegisterForm() {
           </form>
         </Form>
       </div>
+      <div className="text-center mb-6 text-sm">
+        Already have an account?{" "}
+        <Link to="/login" className="underline  underline-offset-4">
+          Login
+        </Link>
+      </div>
+      
     </div>
   );
 }
