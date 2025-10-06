@@ -1,21 +1,16 @@
-
-import './App.css'
-import Footer from './components/LayOut/Footer'
-import Navbar from './components/LayOut/Navbar'
-
+import { Outlet } from "react-router";
+import "./App.css";
+import CommonLayOut from "./components/LayOut/CommonLayOut";
 
 
 function App() {
-
-
   return (
     <>
-   
-   <Navbar></Navbar>
-   <Footer></Footer>
-    
+      <CommonLayOut>
+        <Outlet></Outlet>
+      </CommonLayOut>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
