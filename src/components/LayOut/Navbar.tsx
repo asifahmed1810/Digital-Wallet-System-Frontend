@@ -18,8 +18,9 @@ import { ModeToggle } from "./ModeToggler"
 const navigationLinks = [
   { href: "#", label: "Home", active: true },
   { href: "#", label: "Features" },
-  { href: "#", label: "Pricing" },
+ 
   { href: "#", label: "About" },
+  { href: "#", label: "FAQ" },
 ]
 
 export default function Navbar() {
@@ -110,9 +111,7 @@ export default function Navbar() {
           <Button asChild variant="ghost" size="sm" className="text-sm">
             <a href="#">Sign In</a>
           </Button>
-          <Button asChild size="sm" className="text-sm">
-            <a href="#">Get Started</a>
-          </Button>
+          
         </div>
       </div>
     </header>
