@@ -1,0 +1,12 @@
+
+
+const About = () => {
+    return (
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam exercitationem laboriosam blanditiis quos, modi voluptatem, accusantium atque magnam natus porro eos doloremque ab explicabo aliquam ea molestiae id. Ipsam ut molestias officiis obcaecati facilis facere, expedita aut quibusdam eum ad corporis iste laudantium, repudiandae vitae veritatis omnis perferendis reprehenderit pariatur architecto temporibus. Suscipit molestiae voluptatibus nostrum perferendis soluta id in laboriosam et, dolore molestias porro ducimus? Odio minus quas vel, temporibus incidunt, asperiores veniam molestiae quis fugiat repellendus delectus voluptatum debitis? Quas quidem et repellat ipsa quam asperiores aliquid consequuntur, sapiente molestias quos? Sint doloremque quo, alias corporis harum exercitationem quibusdam libero laboriosam corrupti omnis error voluptatibus totam tempora, eligendi dolore sequi commodi magni dicta qui. Labore placeat vel quam asperiores accusamus non optio voluptas possimus sapiente nostrum, aperiam cumque excepturi, id necessitatibus esse quibusdam fuga dolorum. Nihil iure ad sapiente asperiores. Dolor autem minima debitis eligendi, earum incidunt obcaecati. Ratione quidem nobis ab aut vel cum eos praesentium doloremque nulla non? Consectetur laborum, saepe debitis omnis fugit nesciunt sed ut adipisci. Assumenda minus nulla sint. Consequuntur autem incidunt quisquam fuga perspiciatis, a, praesentium minus omnis debitis aliquam ipsum illum similique beatae. Quam illum amet ducimus optio voluptates numquam soluta delectus debitis eaque ab ullam doloremque magni explicabo, repudiandae deserunt fugiat voluptatem omnis. Quisquam sit esse rem quibusdam voluptas architecto perferendis quaerat nulla id nesciunt nobis numquam nemo sapiente, temporibus ea eaque non consequatur explicabo, natus pariatur. Neque modi consequuntur dicta maxime libero nobis voluptatem sit ad aut, cupiditate quae. Optio porro temporibus veritatis nihil pariatur numquam accusantium perferendis laborum aliquid? Cum quisquam velit odit sapiente qui veniam laudantium esse, optio aliquid perferendis iusto deleniti non aperiam totam fugiat. Perferendis, quasi nostrum. Recusandae impedit debitis natus possimus, suscipit vel! Officiis velit atque aut vitae ut, dignissimos exercitationem corrupti debitis veritatis?
+            
+        </div>
+    );
+};
+
+export default About;
