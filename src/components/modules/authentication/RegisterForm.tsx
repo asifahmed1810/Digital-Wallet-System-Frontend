@@ -20,13 +20,15 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Link } from "react-router";
+import { useRegisterMutation } from "@/components/redux/features/auth/auth.api";
+import { toast } from "sonner";
 
 // ✅ Zod Schema for Validation
 const registerSchema = z.object({
   name: z.string().min(2, "Name is required"),
-  email: z.string().email("Invalid email address"),
+  email: z.email("Invalid email address"),
   password: z.string().min(6, "Password must be at least 6 characters"),
-  role: z.enum(["user", "agent", "admin"]),
+  role: z.enum(["USER", "AGENT"]),
 });
 
 type RegisterFormValues = z.infer<typeof registerSchema>;
@@ -38,12 +40,29 @@ export default function RegisterForm() {
       name: "",
       email: "",
       password: "",
-      role: "user",
+      role: "USER",
     },
   });
 
-  const onSubmit = (values: RegisterFormValues) => {
-    console.log("Form Data:", values);
+  const [register]=useRegisterMutation();
+
+  const onSubmit = async(data: RegisterFormValues) => {
+   
+    const userInfo={
+      name:data.name,
+      email:data.email,
+      password:data.password,
+      role:data.role
+    }
+    try {
+      const result = await register(userInfo).unwrap();
+      console.log(result);
+      toast.success("User created successfully")
+      
+    } catch (error) {
+      console.log(error);
+      
+    }
   };
 
   return (
@@ -133,9 +152,9 @@ export default function RegisterForm() {
                         <SelectValue placeholder="Select role" />
                       </SelectTrigger>
                       <SelectContent className="bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100">
-                        <SelectItem value="user">User</SelectItem>
-                        <SelectItem value="agent">Agent</SelectItem>
-                        <SelectItem value="admin">Admin</SelectItem>
+                        <SelectItem value="USER">USER</SelectItem>
+                        <SelectItem value="AGENT">AGENT</SelectItem>
+                        
                       </SelectContent>
                     </Select>
                   </FormControl>
